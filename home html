@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        
+        </div>
+        <div class="right">
+            <a href="login.html">Login</a> 
+            <a href="signup.html">Sign Up</a>
+        </div> 
+    
+        
+    </header>
+
+    <div class="wave-container">
+        <h1 class="wave-title">Department Ease</h1>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use href="#gentle-wave" x="0" y="0" fill="rgba(255,255,255,0.3)" />
+                <use href="#gentle-wave" x="48" y="10" fill="rgba(255,255,255,0.5)" />
+                <use href="#gentle-wave" x="96" y="5" fill="rgba(255,255,255,0.7)" />
+                <use href="#gentle-wave" x="144" y="15" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+
+   <!-- Slider Container -->
+<section class="slider">
+    <div class="slides">
+        <!-- Slide 1: BCA Department -->
+        <div class="slide">
+            <div class="slide-content">
+                <img src="images/bcaimg.jpg" alt="BCA Department">
+                <div class="description-text">
+                    <h2>Bachelor Of Computer Applications </h2>
+                    <p>The Bachelor of Computer Applications (BCA) program prepares students for careers in computer applications and software development. The curriculum covers programming languages, software engineering, database management, and web development. Our BCA department is equipped with modern facilities and experienced faculty to provide a comprehensive education combining theoretical knowledge with practical skills.</p>
+                    <p>Students have the opportunity to work on real-world projects, engage in internships, and participate in extracurricular activities that enhance their learning experience. The department also organizes workshops, seminars, and guest lectures from industry professionals to keep students updated with the latest trends and technologies in the field.</p>
+                    <p>Whether aspiring to be a software developer, system analyst, or IT consultant, the BCA program offers the foundation needed to succeed in the competitive tech industry.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 2: BSc Cyber Forensics Department -->
+        <div class="slide">
+            <div class="slide-content">
+                <img src="images/cyberforens.jpg" alt="BSc Cyber Forensics Department">
+                <div class="description-text">
+                    <h2>BSc Cyber Forensics</h2>
+                    <p>The Bachelor of Science in Cyber Forensics program equips students with the skills and knowledge necessary for careers in digital forensics and cybersecurity. The curriculum encompasses network security, ethical hacking, digital evidence analysis, and incident response. Our Cyber Forensics department features state-of-the-art labs and experienced faculty to provide a robust education blending theoretical concepts with hands-on practice.</p>
+                    <p>Students can participate in internships, work on real-world cases, and engage in extracurricular activities that enrich their academic experience. The department also hosts workshops, seminars, and guest lectures from industry experts to keep students abreast of the latest advancements and challenges in cybersecurity.</p>
+                    <p>Whether aiming to become a digital forensics analyst, cybersecurity consultant, or ethical hacker, the Cyber Forensics program offers essential training and knowledge to excel in the rapidly evolving cybersecurity landscape.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</section>
+
+
+<!-- Features Section -->
+<section class="features-section">
+    <div class="container">
+        <h2 class="section-title">We Have Exclusive Features</h2>
+        <p class="section-subtitle">Department Management is an all-in-one solution for educational institutes with different types of users</p>
+
+        <div class="features-grid">
+            <!-- Feature 1: Admin -->
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="images/adminreal.png" alt="Admin">
+                </div>
+                <h3>Admin</h3>
+                <p>Manage All Activities Almost All Features.</p>
+            </div>
+
+            <!-- Feature 2: Teacher -->
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="images/teacher.jpg" alt="Teacher">
+                </div>
+                <h3>Teacher</h3>
+                <p>Manage Students And Academics Activities</p>
+            </div>
+
+            <!-- Feature 3: Student -->
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="images/student.png" alt="Student">
+                </div>
+                <h3>Student</h3>
+                <p>Students can log in using their credentials.</p>
+            </div>
+
+            <!-- Feature 4: Department Head -->
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="images/hod.png" alt="Department Head">
+                </div>
+                <h3>Department Head</h3>
+                <p>Oversee department activities and manage faculty.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+    <script>
+        // JavaScript for slider functionality
+        let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
+
+function nextSlide() {
+    slideIndex = (slideIndex + 1) % totalSlides;
+    showSlide(slideIndex);
+}
+
+function prevSlide() {
+    slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+    showSlide(slideIndex);
+}
+
+document.querySelector('.next').addEventListener('click', nextSlide);
+document.querySelector('.prev').addEventListener('click', prevSlide);
+        // Initialize
+        showSlide(slideIndex);
+    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Department Ease is dedicated to providing an enriching educational environment that prepares students for the challenges of the modern workforce.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@departmentease.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+                <p>Address: 123 Education St, Learning City, 12345</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Department Ease. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
