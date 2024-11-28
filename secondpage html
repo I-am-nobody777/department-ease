@@ -21,20 +21,16 @@
                         <a href="student.html">Student</a> 
                     </div>
                 </div>
-                <div class="dropdown">
-                    <a href="#" class="dropbtn">Department</a>
-                    <div class="dropdown-content">
-                        <a href="#">BCA</a>
-                        <a href="#">BSc Cyber Forensics</a>
-                    </div>
-                </div>
+               
+                
                 <div class="dropdown">
                     <a href="#" class="dropbtn">Marksheet</a>
                     <div class="dropdown-content">
-                        <a href="#">BCA</a>
-                        <a href="#">BSc Cyber Forensics</a>
+                        <a href="bca_marksheet.html">BCA</a>
+                        <a href="cf_marksheet.html">BSc Cyber Forensics</a>
                     </div>
                 </div>
+                
                 
         </nav>
     </header>
